@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card {
+  background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+  border-radius: 20px;
+  padding: 0;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  height: 330px;
+  border-radius: 0;
+  object-fit: cover;
+  margin-bottom: 0;
+  border: none;
+  display: block;
+}
+
+.card-content {
+  padding: 25px 40px 40px 40px;
+}
+
+.card-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.card-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(211, 141, 49);
+  margin-bottom: 6px;
+}
+
+.card-header h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.web-page {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(245, 242, 227, 0.89);
+  text-decoration: none;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16.8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-email {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.btn-email:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.btn-linkedin {
+  background-color: #0066cc;
+  color: white;
+}
+
+.btn-linkedin:hover {
+  background-color: #0052a3;
+  transform: translateY(-1px);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.cta .btn-icon svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.btn-email .btn-icon svg,
+.btn-linkedin .btn-icon svg {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.card-body {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.card-body section {
+  margin-bottom: 25px;
+}
+
+.card-body h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.social-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
